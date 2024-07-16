@@ -1,25 +1,34 @@
 # Use the official Jupyter Docker image
 FROM jupyter/base-notebook:latest
 
+# Switch to root user
+USER root
 
-# # Install gcc for compiling Python packages
-# USER root
-# RUN apt-get update && apt-get install -y gcc
+# Create a directory for the notebooks and data
+RUN mkdir -p /home/jovyan/work
 
-# # Switch back to jovyan user
-# USER jovyan
+# Copy your Jupyter notebooks and data into the container
+COPY augmented_data_with_errors.csv /home/jovyan/work/
+COPY Generated_Data.csv /home/jovyan/work/
+COPY NN.ipynb /home/jovyan/work/
+COPY Data_Generation.ipynb /home/jovyan/work/
+
+# Switch back to jovyan user
+USER jovyan
 
 # Install any necessary packages
 RUN pip install --no-cache-dir numpy pandas matplotlib seaborn scipy gensim nltk
 
-# Copy your Jupyter notebooks into the container
-COPY augmented_data_with_errors.csv /
-COPY Generated_Data.csv /
-COPY NN.ipynb /
-COPY Data_Generation.ipynb /
+# Verify the files are copied
+RUN ls -l /home/jovyan/work
 
 # Expose the port Jupyter Notebook runs on
 EXPOSE 8888
 
+# # Set environment variable to avoid token issues
+# ENV JUPYTER_TOKEN=my_token
+
 # Start the Jupyter Notebook server
 CMD ["start-notebook.sh"]
+
+# , "--NotebookApp.token=my_token"]
