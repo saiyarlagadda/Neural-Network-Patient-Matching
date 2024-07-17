@@ -18,6 +18,8 @@ To run the project:
 
  A Record of 100 Unique Patients were generated using this website.
 
+ Dataset: [Genrate_Data.csv](/Generated_Data.csv)
+
 
  ### 2. Data Generate
  ---
@@ -31,7 +33,7 @@ To run the project:
 - - two and four digit years
 - - no year just month and day
 
-The Noteboook for Generate Data is [here](/Generated_Data.csv)
+The Noteboook for Generate Data is [here](/Data_Generation.ipynb)
 
 ### 3. Glove Embedding the Names 
 ---
