@@ -1,9 +1,9 @@
 # Table of content
 ---
- #### 1. Data Creation
- #### 2. Data Generate
- #### 3. Glove Embedding of Names
- #### 4. Dockerizing Project
+ ### 1. Data Creation
+ ### 2. Data Generate
+ ### 3. Glove Embedding of Names
+ ### 4. Dockerizing Project
 
 ### 0. Run the code
 ---
