@@ -7,7 +7,7 @@
 
 ### 0. Run the code
 ---
-To run the project:
+** To run the project: **
 1. Clone the repo.
 2. run docker cmd "docker run -p 8888:8888 nn-notebook".
 3. OPTIONAL: In case you want to run the glove embedding generate code [Download GLove files](https://nlp.stanford.edu/data/glove.6B.zip) and place at  home directory.
