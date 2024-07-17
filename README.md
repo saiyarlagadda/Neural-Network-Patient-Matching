@@ -7,10 +7,10 @@
 
 ### 0. Run the code
 ---
-** To run the project: **
+**To run the project:**
 1. Clone the repo.
 2. run docker cmd "docker run -p 8888:8888 nn-notebook".
-3. OPTIONAL: In case you want to run the glove embedding generate code [Download GLove files](https://nlp.stanford.edu/data/glove.6B.zip) and place at  home directory.
+3. OPTIONAL: In case you want to run the glove embedding generate code [Download Glove files](https://nlp.stanford.edu/data/glove.6B.zip) and place at  home directory.
 
  ### 1. Data Creation
  ---
@@ -18,7 +18,7 @@
 
  A Record of 100 Unique Patients were generated using this website.
 
- Dataset: [Genrate_Data.csv](/Generated_Data.csv)
+ Dataset: [Generate_Data.csv](/Generated_Data.csv)
 
 
  ### 2. Data Generate
@@ -46,7 +46,7 @@ Then, these embedding are then concatinated together.Therby, creating a combined
 A code was deployed to check the top20 similar names to unique and actual records to that of 60k generated error names.
 Results were promising. the simislr names are in same or closer space when checked with cosine similarity.
 
-OPTIONAL: In case you want to run the glove embedding generate code [Download GLove files](https://nlp.stanford.edu/data/glove.6B.zip) and place at  home directory.
+OPTIONAL: In case you want to run the glove embedding generate code [Download Glove files](https://nlp.stanford.edu/data/glove.6B.zip) and place at  home directory.
 
 The Notebook for Glove embedding is [here](/NN.ipynb)
 
