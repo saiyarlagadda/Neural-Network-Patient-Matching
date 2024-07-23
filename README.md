@@ -65,6 +65,8 @@ OPTIONAL: In case you want to run the glove embedding generate code [Download Gl
 
 The Notebook for Glove embedding is [here](/NN.ipynb)
 
+### 
+
 ### 4. Docker the project
 ---
 
