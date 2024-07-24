@@ -6,3 +6,8 @@ my_project/
 glove/
 NN.ipynb
 Untitled.ipynb
+60K_vector_data.csv
+vectorised_Data_60k.csv
+
+# Remove once you got the dataset.
+# char2vec_60k.csv

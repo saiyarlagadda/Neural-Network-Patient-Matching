@@ -34,6 +34,8 @@ COPY --chown=jovyan:users augmented_data_with_errors.csv /home/jovyan/work/
 COPY --chown=jovyan:users Generated_Data.csv /home/jovyan/work/
 COPY --chown=jovyan:users NN.ipynb /home/jovyan/work/
 COPY --chown=jovyan:users Data_Generation.ipynb /home/jovyan/work/
+COPY --chown=jovyan:users char2vec_60k.csv /home/jovyan/work/
+
 
 # Giving permission to read & write to ipynb files
 RUN chmod u+rw /home/jovyan/work/*.ipynb
