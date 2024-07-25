@@ -43,7 +43,7 @@ Picture of Genaerate Dat while with actual settings.
 Picture of code that generated the typos and 60k records.
 ![Picture of code that included the typos and generated 6ok records](/asserts//Picture6.png)
 
-The Noteboook for Generate Data is [here](/Data_Generation.ipynb/gen60k)
+The Noteboook for Generate Data is [here](/Data_Generation.ipynb/)
 
 ### 3. Glove Embedding the Names 
 ---
@@ -64,7 +64,7 @@ The Output of the Glove embedding the names:
 
 OPTIONAL: In case you want to run the glove embedding generate code [Download Glove files](https://nlp.stanford.edu/data/glove.6B.zip) and place at  home directory.
 
-The Notebook for Glove embedding is [here](/NN.ipynb/Glove)
+The Notebook for Glove embedding is [here](/NN.ipynb/)
 
 ### 4. Chars2vec
 ---
@@ -72,7 +72,7 @@ chars2vec is a pre-trained model, we utilise it to convert the records in respec
 
 Here is detailed documentation of char2vec [Github](https://github.com/IntuitionEngineeringTeam/chars2vec).
 
-Here is the code for vectors generation[Link](/NN.ipynb/chars2vecgen) 
+Here is the code for vectors generation[Link](/NN.ipynb/) 
 
 The vector data is stored into csv format. Checkhere for [vector dataset](/char2vec_60k.csv)
 
