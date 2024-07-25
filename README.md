@@ -64,7 +64,7 @@ The Output of the Glove embedding the names:
 
 OPTIONAL: In case you want to run the glove embedding generate code [Download Glove files](https://nlp.stanford.edu/data/glove.6B.zip) and place at  home directory.
 
-The Notebook for Glove embedding is [here](/NN.ipynbGlove)
+The Notebook for Glove embedding is [here](/NN.ipynb/Glove)
 
 ### 4. Chars2vec
 ---
@@ -72,7 +72,7 @@ chars2vec is a pre-trained model, we utilise it to convert the records in respec
 
 Here is detailed documentation of char2vec [Github](https://github.com/IntuitionEngineeringTeam/chars2vec).
 
-Here is the code for vectors generation[Link](/NN.ipynbChars2vec) 
+Here is the code for vectors generation[Link](/NN.ipynb) 
 
 ### 5. Docker the project
 ---
