@@ -43,7 +43,7 @@ Picture of Genaerate Dat while with actual settings.
 Picture of code that generated the typos and 60k records.
 ![Picture of code that included the typos and generated 6ok records](/asserts//Picture6.png)
 
-The Noteboook for Generate Data is [here](/Data_Generation.ipynb)
+The Noteboook for Generate Data is [here](/Data_Generation.ipynb/gen60k)
 
 ### 3. Glove Embedding the Names 
 ---
@@ -72,7 +72,9 @@ chars2vec is a pre-trained model, we utilise it to convert the records in respec
 
 Here is detailed documentation of char2vec [Github](https://github.com/IntuitionEngineeringTeam/chars2vec).
 
-Here is the code for vectors generation[Link](/NN.ipynb) 
+Here is the code for vectors generation[Link](/NN.ipynb/chars2vecgen) 
+
+The vector data is stored into csv format. Checkhere for [vector dataset](/char2vec_60k.csv)
 
 ### 5. Docker the project
 ---
