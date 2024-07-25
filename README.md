@@ -3,7 +3,8 @@
  ### 1. Data Creation
  ### 2. Data Generate
  ### 3. Glove Embedding of Names
- ### 4. Dockerizing Project
+ ### 4. Chars2vec
+ ### 5. Dockerizing Project
 
 ### 0. Run the code
 ---
@@ -65,9 +66,15 @@ OPTIONAL: In case you want to run the glove embedding generate code [Download Gl
 
 The Notebook for Glove embedding is [here](/NN.ipynb)
 
-### 
+### 4. Chars2vec
+---
+chars2vec is a pre-trained model, we utilise it to convert the records in respective vectors.
 
-### 4. Docker the project
+Here is detailed documentation of char2vec [Github](https://github.com/IntuitionEngineeringTeam/chars2vec).
+
+Here is the code for vectors generation[Link](/NN.ipynb/Chars2vec Generating) 
+
+### 5. Docker the project
 ---
 
 The project along with jupyter notebook as dockerize and placed in docker file.
