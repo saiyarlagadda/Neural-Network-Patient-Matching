@@ -54,7 +54,7 @@ secondly, each part of are then vectorised into their respective glove embedding
 Then, these embedding are then concatinated together.Therby, creating a combined glove embedding vector.
 
 Here is the test that i have conducted to check the code.
-![The code for vectorizing and concating the names](/asserts//Picture3.png)
+![The code for vectorizing and concating the names](/asserts/Picture3.png)
 
 A code was deployed to check the top20 similar names to unique and actual records to that of 60k generated error names.
 Results were promising. the simislr names are in same or closer space when checked with cosine similarity.
@@ -70,11 +70,20 @@ The Notebook for Glove embedding is [here](/NN.ipynb/)
 ---
 chars2vec is a pre-trained model, we utilise it to convert the records in respective vectors.
 
+We take each field of patient record and convert into respective embedding using chars2vec, then we store them.
+The store vector records of each patient are then fetched into code and stacked, therby creating a multi-dimensional vector of patient record.
+
 Here is detailed documentation of char2vec [Github](https://github.com/IntuitionEngineeringTeam/chars2vec).
 
-Here is the code for vectors generation[Link](/NN.ipynb/) 
+Here is the code for vectors generation[Link](/NN.ipynb/) .
 
-The vector data is stored into csv format. Checkhere for [vector dataset](/char2vec_60k.csv)
+The vector data is stored into csv format. Checkhere for [vector dataset](/char2vec_60k.csv).
+
+Here is the code snippet that i have used to vectorise code.
+![The code for vectorizing and concating the patient records](/asserts/vector.png)
+
+The entire vector data after stacking is stored in [Char2vect_stacked_60k](/char2vec_stacked_60k.csv). 
+
 
 ### 5. Docker the project
 ---
