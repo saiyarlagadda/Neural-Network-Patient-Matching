@@ -11,6 +11,7 @@ vectorised_Data_60k.csv
 NN-unmodified..ipynb
 100_vector_data.csv
 Phone_Number.ipynb
+phone_numbers.csv
 
 # Remove once you got the dataset.
 # char2vec_60k.csv
