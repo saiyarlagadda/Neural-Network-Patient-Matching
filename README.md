@@ -4,7 +4,9 @@
  ### 2. Data Generate
  ### 3. Glove Embedding of Names
  ### 4. Chars2vec
- ### 5. Dockerizing Project
+ ### 5. Similarity Search
+ ### 6. Similarity Search using Faiss (Facebook AI Similarity Search) 
+ ### 7. Dockerizing Project
 
 ### 0. Run the code
 ---
@@ -84,8 +86,25 @@ Here is the code snippet that i have used to vectorise code.
 
 The entire vector data after stacking is stored in [Char2vect_stacked_60k](/char2vec_stacked_60k.csv). 
 
+### 5. Similarity Search
+---
+The similarity Search was performed on varoius version of code:
+1. A query name is used and  similarity serach is performed on stacked vectors using cosine similarity. The results obtained are not favorable.
+![](/asserts/Picture7.png)
+2. The similarity Search is performed by the adding the threshold. On adjusting the threshold there is no possibility of finding the proper needed results.
+![](/asserts/Picture8.png)
+3. Similarity search based on Name using cosine similarity with threshold provide accuracte results.
+![](/asserts/Picture9.png)
 
-### 5. Docker the project
+### 6. Similarity Search using FAISS
+---
+1. Similarity search using Fiass on stacked vector. The results are no were near the accurate.
+![](/asserts/Picture10.png)
+
+2. Similarity Search using Faiss on stacked vector with Threshold and ditance calculation. No accurate Results obtained
+![](/asserts/Picture11.png)
+
+### 7. Docker the project
 ---
 
 The project along with jupyter notebook as dockerize and placed in docker file.
